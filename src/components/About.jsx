@@ -40,9 +40,9 @@ const skills = [
 const About = () => {
   return (
     <section id="about" className="px-6 py-20 bg-white md:px-20">
-      <div className="flex flex-col items-start max-w-6xl gap-12 mx-auto md:flex-row">
+      <div className="flex flex-col-reverse items-start max-w-6xl gap-12 mx-auto md:flex-row">
         <div className="w-full md:w-1/2">
-          <h3 className="mb-6 text-2xl font-bold text-gray-700">
+          <h3 className="mb-6 text-3xl font-bold text-gray-700">
             Tecnologias & Ferramentas
           </h3>
           <div className="flex flex-wrap gap-4">
@@ -59,7 +59,7 @@ const About = () => {
         </div>
 
         <div className="w-full md:w-1/2">
-          <h3 className="mb-6 text-2xl font-bold text-gray-700">Sobre Mim</h3>
+          <h3 className="mb-6 text-3xl font-bold text-gray-700">Sobre Mim</h3>
           <p className="mb-4 text-lg leading-relaxed text-gray-700">
             Sou um desenvolvedor fullstack j&uacute;nior, apaixonado por
             tecnologia e cria&ccedil;&atilde;o de solu&ccedil;&otilde;es

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-between min-h-screen px-6 py-20 bg-gray-100 md:flex-row md:px-20"
+      className="flex flex-col-reverse items-center justify-between min-h-screen px-6 py-20 bg-gray-100 md:flex-row md:px-20"
     >
       <div className="mb-10 text-center md:w-1/2 md:mb-0 md:text-left">
         <h1 className="mb-2 text-4xl font-bold text-gray-700 md:text-5xl">
