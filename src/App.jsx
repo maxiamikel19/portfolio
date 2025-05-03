@@ -1,9 +1,11 @@
-import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div>
-      <h2 className="text-red-600">App</h2>
+    <div className="scroll-smooth">
+      <Navbar />
+      <Hero />
     </div>
   );
 };
