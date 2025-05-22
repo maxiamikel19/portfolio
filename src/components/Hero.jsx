@@ -1,11 +1,31 @@
+import React, { useState, useEffect } from "react";
 import foto from "../assets/images/foto.png";
 import TypingTextAnimation from "./TypingTextAnimation";
 
+const bgColors = [
+  "bg-gray-100",
+  "bg-blue-200",
+  "bg-green-100",
+  "bg-yellow-100",
+  "bg-pink-200",
+  "bg-purple-100",
+];
+
 const Hero = () => {
+  const [currentBg, setCurrentBg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % bgColors.length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="home"
-      className="flex flex-col-reverse items-center justify-between min-h-screen px-6 py-20 bg-gray-100 md:flex-row md:px-20"
+      className={`flex flex-col-reverse items-center justify-between min-h-screen px-6 py-20 transition-colors duration-1000 ease-in-out ${bgColors[currentBg]} md:flex-row md:px-20`}
     >
       <div className="mb-10 text-center md:w-1/2 md:mb-0 md:text-left">
         <h1 className="mb-2 text-4xl font-bold text-gray-700 md:text-5xl">
@@ -13,9 +33,9 @@ const Hero = () => {
         </h1>
         <TypingTextAnimation />
         <p className="my-6 text-lg text-gray-700">
-          Tenho experi&ecirc;ncia com tecnologias modernas como React,
-          TailwindCSS, Spring Boot e Laravel. Crio soluções eficientes com foco
-          em desempenho e usabilidade.
+          Tenho experiência com tecnologias modernas como React, TailwindCSS,
+          Spring Boot e Laravel. Crio soluções eficientes com foco em desempenho
+          e usabilidade.
         </p>
         <a
           href="/cv/CV_Dev_Fullstack_Pt.pdf"
