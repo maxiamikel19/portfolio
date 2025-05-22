@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const showAlertMessage = (e) => {
+    e.preventDefault();
+    alert(
+      "Olá " +
+        name +
+        " algumas partes do meu portfolio ainda está fora de funcionalidade, estou trabalhando nisso! \n Obrigado."
+    );
+  };
   return (
     <motion.section
       id="contact"
@@ -47,6 +57,9 @@ const Contact = () => {
               id="name"
               className="w-full px-4 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
               required
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
           </div>
 
@@ -83,6 +96,7 @@ const Contact = () => {
           <button
             type="submit"
             className="px-6 py-2 text-white transition bg-gray-600 hover:bg-gray-500"
+            onClick={showAlertMessage}
           >
             Enviar
           </button>

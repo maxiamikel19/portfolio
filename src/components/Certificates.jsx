@@ -7,21 +7,24 @@ const courses = [
     courseName: "Análise e Desenvolvimento de Sistemas",
     institution: "Unicesumar",
     completionDate: "Janeiro 2022",
-    certificateLink: "https://linkparacertificado.com/curso1",
+    certificateLink:
+      "https://drive.google.com/file/d/1Zlqi7OieNj9C95CRw0igGZaX9XF1DNPJ/view?usp=drive_link",
   },
   {
     id: 2,
-    courseName: "Fundamentos de React",
-    institution: "Coursera",
+    courseName: "Spring Boot + ReactJS: Fullstack do Zero ao Deploy no Docker",
+    institution: "Udemy",
     completionDate: "Março 2024",
-    certificateLink: "https://linkparacertificado.com/curso2",
+    certificateLink:
+      "https://drive.google.com/file/d/1hok-vy0X_OoZVkjOms_iTFunuE3PDG20/view?usp=drive_link",
   },
   {
     id: 3,
-    courseName: "Introdução ao Laravel",
-    institution: "Alura",
+    courseName: "Laravel 9 - Crea Aplicaciones y Sitios Web con PHP 8 y MVC",
+    institution: "Udemy",
     completionDate: "Junho 2024",
-    certificateLink: "https://linkparacertificado.com/curso3",
+    certificateLink:
+      "https://drive.google.com/file/d/1Zlqi7OieNj9C95CRw0igGZaX9XF1DNPJ/view?usp=drive_link",
   },
   {
     id: 4,

@@ -18,7 +18,7 @@ const Hero = () => {
           em desempenho e usabilidade.
         </p>
         <a
-          href="/cv/Curroculum-DEV-Java.pdf"
+          href="/cv/CV_Dev_Fullstack_Pt.pdf"
           download="Curriculo-Amikel.pdf"
           className="inline-block px-6 py-2 text-lg text-white transition bg-gray-600 hover:bg-gray-500"
         >
